@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+   <com.google.android.material.tabs.TabLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:tabTextColor="@color/black"
+       android:id="@+id/tablayouytid"
+       app:tabSelectedTextColor="@color/white"
+       android:background="#4ca122">
+
+       <com.google.android.material.tabs.TabItem
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="chats"
+           android:id="@+id/chat_id"/>
+       <com.google.android.material.tabs.TabItem
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+            android:text="status"
+           android:id="@+id/status_id"/>
+       <com.google.android.material.tabs.TabItem
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="calls"
+           android:id="@+id/call_id"/>
+
+   </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewpager_id"/>
+</LinearLayout>
